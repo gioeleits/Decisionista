@@ -1,0 +1,18 @@
+package com.example.decisionista.navigation
+
+import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.example.decisionista.ui.screens.*
+
+@Composable
+fun AppNavHost(navController: NavHostController) {
+    NavHost(navController = navController, startDestination = "home") {
+        composable("home") { HomeScreen(navController) }
+        composable("saved") { SavedScreen(navController) }
+        composable("group") { GroupScreen(navController) }
+        composable("result") { ResultScreen(navController) }
+        composable("splash") { SplashScreen(navController) }
+    }
+}
