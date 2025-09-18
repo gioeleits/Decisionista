@@ -40,8 +40,13 @@ android {
 }
 
 dependencies {
-    implementation("androidx.navigation:navigation-compose:2.7.5")
-    implementation("androidx.compose.material:material-icons-extended:1.6.0")
+
+    // Dipendenze per Jetpack Compose Material 3
+    implementation(libs.material3)
+    implementation(libs.androidx.material3.window.size.class1)
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
